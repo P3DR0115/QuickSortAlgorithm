@@ -48,12 +48,8 @@ namespace QuickSortAlgorithm
             Random rnd = new Random();
 
             for (int i = 0; i < 1000000; i++)
-            {
-
-                DataStuff temp = new DataStuff();
-                
+            {                                
                 dataSet.Add(new Tuple<int, double>(i, rnd.NextDouble()));
-
             }
             Console.WriteLine("Done Creating the 1000000 numbers");
 
