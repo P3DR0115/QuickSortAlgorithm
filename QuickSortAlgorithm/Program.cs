@@ -3,7 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// This is the quicksort Algorithm with Tuples.
+/// 
+/// When you run the program, it should auto-try to load from the files. Just change the file paths
+/// to make it load from somewhere on your computer. It also displays how long the quicksort took
+/// to the console when it finishes
+/// 
+/// Someone just has to do the parallel part.
+/// </summary>
 namespace QuickSortAlgorithm
 {
     class Program
@@ -72,6 +80,7 @@ namespace QuickSortAlgorithm
                 dataTemp[i] = tempString;
             }
 
+            // Change the save location here if you need to
             System.IO.File.WriteAllLines(@"C:\Users\P3dro\source\repos\Algorithms\QuickSortAlgorithm\dataSorted.csv", dataTemp);
             Console.WriteLine("Done Saving to File (Merge Sorted)");
         }
@@ -81,6 +90,7 @@ namespace QuickSortAlgorithm
             string[] dataTemp = new string[1000000];
             string[] temp;
 
+            // Change the save location here if you need to
             dataTemp = System.IO.File.ReadAllLines(@"C:\Users\P3dro\source\repos\Algorithms\QuickSortAlgorithm\data.csv");
 
             for(int i = 0; i < dataTemp.Length; i++)
